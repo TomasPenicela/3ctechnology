@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        .card {
+            background-color: #ffffff;
+            /* Cor de fundo do card */
+            border-radius: 10px;
+            /* Bordas arredondadas */
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            /* Efeito de aumento ao passar o mouse */
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.5rem;
+            /* Tamanho maior para o título */
+            color: #019e9a;
+            /* Cor do título */
+        }
+
+        .card-text {
+            color: #555;
+            /* Cor do texto da descrição */
+        }
+
+        .icon-circle {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            /* Largura do círculo */
+            height: 70px;
+            /* Altura do círculo */
+            border-radius: 50%;
+            /* Borda arredondada para formar um círculo */
+            background-color: rgba(1, 158, 154, 0.2);
+            /* Cor de fundo suave */
+            margin-bottom: 1rem;
+            /* Espaço abaixo do círculo */
+        }
+
+        .icon-circle i {
+            color: #019e9a;
+            /* Cor do ícone */
+            font-size: 36px;
+            /* Tamanho do ícone */
+        }
+    </style>
+</head>
+
+<body style="font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <!--Navbar-->
+    <section>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./AIC/img/AIC Company_Logotipo-01.png" style="width: 50px;" alt="">
+            </div>
+            <div class="nav-list" id="nav-list">
+                <li><a href="/">Lar</a></li>
+                <li><a href="/about.html">Sobre</a></li>
+                <li><a href="/service.html">Serviços</a></li>
+                <li><a href="/test.html">Contato</a></li>
+            </div>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        
+    </section>
+    <!-- cabecalho -->
+    <section class="social-section shadow-md">
+        <div class="container">
+            <h2>NOSSOS SERVICOS</h2>
+            <div class="social-icons">
+                <img style="width: 100px;" src="./AIC/img/AIC Company_Logotipo-01.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Servicos-->
+    <section>
+        <div class="container mt-5">
+            <!-- Cards para versões maiores -->
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card text-center shadow-sm border-light">
+                        <div class="card-body">
+                            <div class="icon-circle">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <h5 class="card-title display-6">Participação em sociedades</h5>
+                            <p class="card-text">Atuamos como sócios em empreendimentos variados, contribuindo com
+                                capital e expertise</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card text-center shadow-sm border-light">
+                        <div class="card-body">
+                            <div class="icon-circle">
+                                <i class="bi bi-cash-stack"></i>
+                            </div>
+                            <h5 class="card-title display-6">Administração de Activos Financeiros</h5>
+                            <p class="card-text">Oferecemos serviços de administração de activos financeiros, buscando
+                                maximizar o retorno sobre investimentos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card text-center shadow-sm border-light">
+                        <div class="card-body">
+                            <div class="icon-circle">
+                                <i class="bi bi-briefcase-fill"></i>
+                            </div>
+                            <h5 class="card-title display-6">Consultoria Empresarial e Gestão de Negócios</h5>
+                            <p class="card-text">Prestamos consultoria para optimização da gestão empresarial, incluindo
+                                planeamento estratégico e reestruturação de processos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card text-center shadow-sm border-light">
+                        <div class="card-body">
+                            <div class="icon-circle">
+                                <i class="bi bi-house-fill"></i>
+                            </div>
+                            <h5 class="card-title display-6">Compra e Venda de Imóveis</h5>
+                            <p class="card-text">Facilitamos em transacções imobiliárias, desde a aquisição até a
+                                revenda de propriedades</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Endereço -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Endereço</h5>
+                        <div class="icon-text">
+                            <i class="bi bi-geo-alt" style="font-size: 15px;"></i>
+                            <p>Maputo, Central C n.*1010, Av. Patrice Lumumba </p>
+                        </div>
+                        <div class="icon-text">
+                            <i class="bi bi-telephone" style="font-size: 15px;"></i>
+                            <p>(+258) 83 311 1021</p>
+                        </div>
+                        <div class="icon-text">
+                            <i class="bi bi-telephone" style="font-size: 15px;"></i>
+                            <p>(+258) 87 441 1021</p>
+                        </div>
+                        <div class="icon-text">
+                            <i class="bi bi-envelope" style="font-size: 15px;"></i>
+                            <p><a href="mailto:info@aic.co.mz">info@aic.co.mz</a></p>
+                        </div>
+                        <!-- <div class="social-icons">
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div> -->
+                    </div>
+
+                    <!-- Serviços -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Links Importantes</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="/"><i class="bi bi-arrow-bar-right" style="margin-right: 5px;"></i>lar
+                                </a></li>
+                            <li><a href="/about"><i class="bi bi-arrow-bar-right" style="margin-right: 5px;"></i>Sobre
+                                    nós
+                                </a></li>
+                            <li><a href="/service"><i class="bi bi-arrow-bar-right"
+                                        style="margin-right: 5px;"></i>serviços
+                                </a></li>
+                            <li><a href="/contact"><i class="bi bi-arrow-bar-right"
+                                        style="margin-right: 5px;"></i>Contactos
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Subscrever</h5>
+                        <form class="newsletter">
+                            <input type="email" class="form-control" placeholder="E-mail">
+                            <button class="btn" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+
+                <hr style="border-color: rgba(255, 255, 255, 0.2);">
+
+                <!-- Direitos Autorais -->
+                <div class="copyright">
+                    <p>© AIC COMPANY LDA , Todos direitos reservados.</p>
+                    <p>Desenvolvido por <a href="#">3C Technology</a></p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!--Navbar-->
+    <script>
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navList = document.getElementById("nav-list");
+
+        mobileMenu.addEventListener("click", () => {
+            navList.classList.toggle("active");
+            mobileMenu.classList.toggle("active"); // Altera o estado do toggler
+        });
+
+        // Fecha o menu ao clicar fora
+        window.addEventListener("click", (event) => {
+            if (!mobileMenu.contains(event.target) && !navList.contains(event.target)) {
+                navList.classList.remove("active");
+                mobileMenu.classList.remove("active"); // Remove o estado do toggler
+            }
+        });
+
+        // Fecha o menu ao clicar em um link
+        navList.addEventListener("click", () => {
+            navList.classList.remove("active");
+            mobileMenu.classList.remove("active"); // Remove o estado do toggler
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.typed-text', {
+            strings: ["Company", "LDA"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function () {
+            const navList = document.getElementById('nav-list');
+            navList.classList.toggle('active'); // Adiciona ou remove a classe 'active'
+        });
+    </script>
+</body>
+
+</html>

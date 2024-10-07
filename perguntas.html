@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Container principal */
+        .faq-container {
+            background-color: #f7f7f7;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título da seção */
+        .faq-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2C3E50;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .faq-title::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #F1C40F;
+            margin: 10px auto 0;
+        }
+
+        /* Estilos dos itens de FAQ */
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 20px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .faq-item {
+                padding: 10px 5px;
+            }
+        }
+
+        /* Ícone de expandir/colapsar */
+        .faq-icon {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #34495E;
+            transition: transform 0.3s ease;
+        }
+
+        /* Questão da FAQ */
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: #34495E;
+            margin-bottom: 0;
+        }
+
+        /* Resposta da FAQ */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, opacity 0.3s ease;
+            opacity: 0;
+            padding-left: 20px;
+        }
+
+        .faq-answer p {
+            font-size: 1rem;
+            color: #7F8C8D;
+            margin-top: 10px;
+        }
+
+        /* Estilo para expandir */
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            opacity: 1;
+        }
+
+        /* Girar o ícone quando expandido */
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Hover para os itens */
+        .faq-item:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Responsividade para telas pequenas */
+        @media (max-width: 768px) {
+            .faq-title {
+                font-size: 2rem;
+            }
+
+            .faq-container {
+                padding: 10px;
+            }
+
+            .faq-answer {
+                padding-left: 10px;
+            }
+        }
+
+        /* Garantindo que a largura ocupe 100% da tela */
+        .full-width {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Garantindo que o conteúdo ocupe toda a largura da tela -->
+    <section>
+        <div class="container-fluid full-width">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 faq-container shadow-lg p-3 p-lg-5">
+                    <h1 class="faq-title">Perguntas Frequentes</h1>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="faq-question">Como encontrar fotos de stock de cozinha americana em nossa
+                                biblioteca?
+                            </p>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Procure as fotos de stock da cozinha americana em nossa biblioteca, utilizando filtros
+                                para
+                                refinar sua busca. Isso pode incluir categorias, cores e estilos de design.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="faq-question">Como faço para solicitar uma imagem personalizada?</p>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Entre em contato com nossa equipe de suporte pela seção de "Contato". Forneça detalhes
+                                específicos sobre a imagem que você precisa.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="faq-question">Quais são os métodos de pagamento disponíveis?</p>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Oferecemos cartões de crédito, PayPal e transferências bancárias. Para mais detalhes,
+                                consulte nossa página de pagamentos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Função para expandir/colapsar perguntas
+            function toggleFaq(element) {
+                const faqItem = element;
+                faqItem.classList.toggle('active');
+            }
+        </script>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

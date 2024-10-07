@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção de Subscrição</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .subscription-section {
+            background-color: #2b4b58; /* Cor de fundo atraente */
+            color: white; /* Cor do texto */
+            padding: 40px 20px; /* Espaçamento interno */
+            text-align: center; /* Centraliza o texto */
+            border-radius: 10px; /* Bordas arredondadas */
+            margin: 40px 0; /* Margem superior e inferior */
+        }
+
+        .subscription-section h2 {
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+
+        .subscription-form {
+            display: flex; /* Usar flexbox para alinhar o input e o botão */
+            justify-content: center; /* Centraliza os itens */
+        }
+
+        .subscription-section input[type="email"] {
+            width: 300px; /* Largura do campo de e-mail */
+            padding: 10px; /* Espaçamento interno */
+            border-radius: 5px 0 0 5px; /* Bordas arredondadas */
+            border: none; /* Sem borda */
+        }
+
+        .subscription-section button {
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            border-radius: 0 5px 5px 0; /* Bordas arredondadas */
+            background-color: #8a6d6d; /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            border: none; /* Sem borda */
+            transition: background-color 0.3s; /* Transição suave */
+        }
+
+        @media (max-width: 500px) {
+            .subscription-section input[type="email"] {
+                width: 200px; /* Ajuste para telas menores */
+            }
+
+            .subscription-section button {
+                padding: 10px 20px;
+            }
+        }
+
+        .subscription-section button:hover {
+            background-color: #e2e2e2; /* Cor ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="p-md-5">
+        <div class="container-fluid">
+            <div class="subscription-section">
+                <h2>Subscreva à novidades</h2>
+                <form class="subscription-form">
+                    <input type="email" placeholder="Digite seu e-mail" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
